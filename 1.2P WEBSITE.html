@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>** The JavaScript Concepts **</title>
+</head>
+<body>
+<script>
+
+  // String methods
+  const originalString = "Hey, User!";
+  const length = originalString.length;
+  const upperCaseString = originalString.toUpperCase();
+  const lowerCaseString = originalString.toLowerCase();
+  const substring = originalString.substring(0, 5);
+  const indexOfComma = originalString.indexOf(',');
+
+  // Number methods
+  const number = 17;
+  const stringFromNumber = number.toString();
+  const fixedDecimal = number.toFixed(2);
+  const roundedNumber = Math.round(3.7);
+  const randomInt = Math.floor(Math.random() * 100) + 1; // Fixed the randomInt calculation
+  const squaredNumber = Math.pow(4, 2);
+
+  // Array methods
+  const colors = ['Pink', 'Violet', 'Purple'];
+  const joinedColors = colors.join(', ');
+  const reversedColors = colors.slice().reverse();
+  const slicedColors = colors.slice(1, 3);
+  const indexOfPurple = colors.indexOf('Purple');
+  const hasBlue = colors.includes('Blue');
+  const colorLengths = colors.map(color => color.length);
+
+  // Date methods
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  const month = currentDate.getMonth();
+  const day = currentDate.getDate();
+  const hours = currentDate.getHours();
+  const minutes = currentDate.getMinutes();
+
+  // Function methods
+  function greet(name) 
+  {
+    return `Welcome, ${name}!`;
+  }
+  const result = greet('Alice');
+  
+  function multiply(a, b) 
+  {
+    return a * b;
+  }
+  const product = multiply(5, 8);
+
+  function capitalize(text) 
+  {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+  const capitalizedString = capitalize('hello');
+
+  document.write(`<p>Original String: ${originalString}</p>`);
+  document.write(`<p>String Length: ${length}</p>`);
+  document.write(`<p>Uppercase String: ${upperCaseString}</p>`);
+  document.write(`<p>Lowercase String: ${lowerCaseString}</p>`);
+  document.write(`<p>Substring: ${substring}</p>`);
+  document.write(`<p>Index of Comma: ${indexOfComma}</p>`);
+
+  document.write(`<p>Number: ${number}</p>`);
+  document.write(`<p>String from Number: ${stringFromNumber}</p>`);
+  document.write(`<p>Fixed Decimal: ${fixedDecimal}</p>`);
+  document.write(`<p>Rounded Number: ${roundedNumber}</p>`);
+  document.write(`<p>Random Integer: ${randomInt}</p>`);
+  document.write(`<p>Squared Number: ${squaredNumber}</p>`);
+
+  document.write(`<p>Joined Colors: ${joinedColors}</p>`);
+  document.write(`<p>Reversed Colors: ${reversedColors.join(', ')}</p>`);
+  document.write(`<p>Sliced Colors: ${slicedColors.join(', ')}</p>`);
+  document.write(`<p>Index of Purple: ${indexOfPurple}</p>`);
+  document.write(`<p>Has Blue: ${hasBlue}</p>`);
+  document.write(`<p>Color Lengths: ${colorLengths.join(', ')}</p>`);
+
+  document.write(`<p>Current Year: ${year}</p>`);
+  document.write(`<p>Current Month: ${month}</p>`);
+  document.write(`<p>Current Day: ${day}</p>`);
+  document.write(`<p>Current Hours: ${hours}</p>`);
+  document.write(`<p>Current Minutes: ${minutes}</p>`);
+
+  document.write(`<p>Result of Function: ${result}</p>`);
+  document.write(`<p>Product of Multiplication: ${product}</p>`);
+  document.write(`<p>Result of Capitalize Function: ${capitalizedString}</p>`);
+</script>
+</body>
+</html>
